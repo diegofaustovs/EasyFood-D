@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">EasyFood - Cliente</string>
+    <string name="realizar_pedido">Realizar Pedido</string>
+    <string name="iniciar_sesion">Iniciar Sesión</string>
+    <string name="bienvenida">Bienvenido a EasyFood (?)</string>
+    <string name="title_activity_map">Map</string>
+    <string name="mis_pedidos">Mis Pedidos</string>
+    <string name="hola_mundo">Hola Mundo</string>
+</resources>
