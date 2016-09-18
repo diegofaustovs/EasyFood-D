@@ -1,4 +1,4 @@
-package com.grupov08.easyfood_cliente;
+package com.grupov08.easyfood_domiciliario;
 
 import org.junit.Test;
 

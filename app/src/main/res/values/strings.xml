@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">EasyFood - Cliente</string>
+    <string name="app_name">EasyFood - Domiciliario</string>
     <string name="realizar_pedido">Realizar Pedido</string>
     <string name="iniciar_sesion">Iniciar Sesión</string>
     <string name="bienvenida">Bienvenido a EasyFood (?)</string>

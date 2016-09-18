@@ -1,4 +1,4 @@
-package com.grupov08.easyfood_cliente;
+package com.grupov08.easyfood_domiciliario;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

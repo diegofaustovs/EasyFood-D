@@ -4,10 +4,10 @@
 
     To get one, follow this link, follow the directions and press "Create" at the end:
 
-    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=81:22:49:5A:FB:88:06:EF:1F:45:17:C7:E9:1A:2A:B2:45:F3:06:16%3Bcom.grupov08.easyfood_cliente
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=81:22:49:5A:FB:88:06:EF:1F:45:17:C7:E9:1A:2A:B2:45:F3:06:16%3Bcom.grupov08.easyfood_domiciliario
 
     You can also add your credentials to an existing key, using this line:
-    81:22:49:5A:FB:88:06:EF:1F:45:17:C7:E9:1A:2A:B2:45:F3:06:16;com.grupov08.easyfood_cliente
+    81:22:49:5A:FB:88:06:EF:1F:45:17:C7:E9:1A:2A:B2:45:F3:06:16;easyfood_domiciliario
 
     Alternatively, follow the directions here:
     https://developers.google.com/maps/documentation/android/start#get-key

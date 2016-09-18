@@ -1,4 +1,4 @@
-package com.grupov08.easyfood_cliente;
+package com.grupov08.easyfood_domiciliario;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
