@@ -21,29 +21,68 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/realizar_pedido"
-        android:id="@+id/btn_domicilio_main"
+        android:text="@string/contactar_cliente"
+        android:onClick="contactarCliente"
+        android:id="@+id/contactar_cliente_main"
+        android:layout_marginTop="32dp"
         android:layout_below="@+id/label_welcome_main"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="112dp"
-        android:onClick="realizarPedido" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/iniciar_sesion"
-        android:id="@+id/btn_login_main"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="iniciarSesion" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/mis_pedidos"
-        android:id="@+id/btn_mis_pedidos_main"
-        android:onClick="pedidosAnteriores"
-        android:layout_below="@+id/btn_domicilio_main"
         android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/telefono_cliente"
+        android:layout_marginTop="29dp"
+        android:text="@string/ingrese_el_tel_fono_del_cliente_a_contactar"
+        android:inputType="text"
+        android:layout_below="@+id/contactar_cliente_main"
+        android:layout_alignStart="@+id/contactar_cliente_main"
+        android:layout_alignEnd="@+id/contactar_cliente_main" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/telefono_actual_registrado"
+        android:id="@+id/lbl_telefono_actual"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/telefono_cliente"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/telefono_actual_main"
+        android:inputType="text"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/telefono_cliente"
+        android:layout_alignEnd="@+id/telefono_cliente" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cambiar_telefono"
+        android:id="@+id/btn_cambiar_telefono_domiciliario"
+        android:onClick="cambiarTelefono"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Nombre actual"
+        android:id="@+id/textView2"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/telefono_actual_main"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nombre_actual_domi"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/telefono_actual_main"
+        android:layout_alignEnd="@+id/telefono_actual_main" />
 
 </RelativeLayout>
