@@ -33,8 +33,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/telefono_cliente"
         android:layout_marginTop="29dp"
-        android:text="@string/ingrese_el_tel_fono_del_cliente_a_contactar"
-        android:inputType="text"
+        android:inputType="number"
         android:layout_below="@+id/contactar_cliente_main"
         android:layout_alignStart="@+id/contactar_cliente_main"
         android:layout_alignEnd="@+id/contactar_cliente_main" />
@@ -84,5 +83,14 @@
         android:layout_below="@+id/textView2"
         android:layout_alignStart="@+id/telefono_actual_main"
         android:layout_alignEnd="@+id/telefono_actual_main" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Telefono del Cliente"
+        android:id="@+id/textView11"
+        android:layout_below="@+id/contactar_cliente_main"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

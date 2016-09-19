@@ -11,11 +11,14 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.grupov08.easyfood_domiciliario.mundo.EasyFood;
+
 import java.util.ArrayList;
 
 public class PedidosActivity extends AppCompatActivity {
 
     private String telCliente;
+    private EasyFood ef = EasyFood.getInstancia();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +33,13 @@ public class PedidosActivity extends AppCompatActivity {
         Intent i = getIntent();
         telCliente = i.getStringExtra("telCliente");
         ((TextView)findViewById(R.id.telefono_cliente)).setText(telCliente);
+
+        try {
+            ((TextView)findViewById(R.id.info_pedido)).setText(EasyFood.getInstancia().getPedido());
+        } catch (Exception e) {
+            Toast.makeText(PedidosActivity.this, "No hay pedidos", Toast.LENGTH_SHORT).show();
+        }
+
     }
 
     public void sincronizarConCliente(View v)
@@ -37,11 +47,11 @@ public class PedidosActivity extends AppCompatActivity {
         Toast.makeText(PedidosActivity.this, telCliente, Toast.LENGTH_SHORT).show();
     }
 
-    public void enviarMensaje()
+    public void enviarMensaje(View v)
     {
 
         String mensaje = ((EditText)findViewById(R.id.mensaje_cliente_pedido)).getText().toString();
-        SmsManager.getDefault().sendTextMessage(mensaje,null,infoDomiciliario,null,null);
+        //SmsManager.getDefault().sendTextMessage(mensaje,null,infoDomiciliario,null,null);
     }
 
     public void finalizarPedido (View v)
